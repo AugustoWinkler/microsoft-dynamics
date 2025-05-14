@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Celeste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Aqua Celeste</h1>
+    </header>
+
+    <main>
+        <form id="leadForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+            
+            <label for="interests">Interesse:</label>
+            <select id="interests" name="interests" required>
+                <option value="agua-destilada">Água Destilada</option>
+                <option value="agua-deionizada">Água Deionizada</option>
+                <option value="filtros">Filtros</option>
+                <option value="outros">Outros</option>
+            </select>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section class="about">
+            <p>
+                A <strong>Aqua Celeste</strong> é uma empresa dedicada à sustentabilidade e à qualidade da água. 
+                Oferecemos soluções inovadoras para água destilada, deionizada e sistemas de filtragem, 
+                sempre com foco no meio ambiente e na preservação dos recursos naturais.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aqua Celeste. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
