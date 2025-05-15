@@ -6,7 +6,7 @@ document.getElementById("leadForm").addEventListener("submit", function (event) 
     const jsonData = Object.fromEntries(formData.entries());
 
     // Configura o endpoint do Dynamics
-    const endpoint = "https://6d3ffc8b3f82e56ba706fe8210f34b.ed.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ca8582ca9cd14925a1f38a97475e5211/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=6d3ffc8b-3f82-e56b-a706-fe8210f34bed";
+    const endpoint = "https://172dff3fa035e0909763b1c1560713.ec.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/b75e8a05e88e420a86a5d968d6ad7d25/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=172dff3f-a035-e090-9763-b1c1560713ec&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=u7m0m2o4S8JJxaYnBCy06Ad58NV6AJ48jj8Y0vM8p5M";
 
     // Envia os dados para o Dynamics
     fetch(endpoint, {
