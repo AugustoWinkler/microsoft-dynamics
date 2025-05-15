@@ -1,136 +1,89 @@
-/* Reset básico */
-body, h1, h2, h3, p, ul, ol, li, form, label, input, select, button, textarea {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo geral do body */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #e0f7fa, #80deea);
-    color: #004d40;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #f5f5f5; /* Texto claro */
 }
 
-/* Título principal */
-.title {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
-    color: #00796b;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+header {
+    background-color: #333333; /* Fundo do cabeçalho */
+    padding: 20px;
     text-align: center;
 }
 
-/* Estilo do formulário */
-form {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+header .title {
+    color: #ffb84d; /* Laranja dourado */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main {
     padding: 20px;
-    max-width: 400px;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
-/* Estilo dos labels */
+form {
+    background-color: #262626; /* Fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%; /* Largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
 form label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: bold;
-    font-size: 14px;
-    color: #00796b;
+    color: #ffb84d; /* Laranja dourado */
 }
 
-/* Estilo dos inputs, select e textarea */
-form input, form select, form textarea {
+form input, form textarea, form select {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #b2dfdb;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #004d40;
-    background: #e0f2f1;
-    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
 }
 
-form input:focus, form select:focus, form textarea:focus {
-    border-color: #00796b;
-    outline: none;
+form input::placeholder, form textarea::placeholder {
+    color: #888888;
 }
 
-/* Estilo do botão */
 form button {
-    padding: 10px;
-    background: #00796b;
-    color: #ffffff;
+    background-color: #ffb84d; /* Botão laranja dourado */
+    color: #1a1a1a; /* Texto escuro */
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background: #004d40;
+    background-color: #e6a843; /* Laranja dourado mais escuro */
 }
 
-/* Seção sobre a empresa */
-.about {
+section.about {
     margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #004d40;
-    line-height: 1.6;
+    padding: 20px;
+    background-color: #333333; /* Fundo da seção */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Rodapé */
 footer {
-    margin-top: 30px;
-    height: 100px;
-    margin-bottom: 0;
+    background-color: #262626; /* Fundo do rodapé */
     text-align: center;
-    font-size: 14px;
-    background-color: #03515c;
-    color: #ffffff;
-    width: 98vw;
+    padding: 10px;
+    margin-top: 20px;
+    color: #888888;
+    font-size: 0.9rem;
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-    .title {
-        font-size: 3rem;
-    }
-
-    form {
-        padding: 30px;
-        max-width: 500px;
-    }
-
-    form label {
-        font-size: 16px;
-    }
-
-    form input, form select, form textarea {
-        font-size: 16px;
-    }
-
-    form button {
-        font-size: 18px;
-    }
-
-    .about {
-        font-size: 16px;
-    }
-
-    footer {
-        font-size: 16px;
-    }
+footer p {
+    margin: 0;
 }
